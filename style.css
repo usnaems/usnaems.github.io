@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9; /* Цвет фона по умолчанию */
+    color: #333;
+    transition: background-color 0.5s; /* Плавная смена цвета */
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Класс для обтекания картинки текстом */
+.float-img {
+    float: left; /* Картинка слева */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 3px solid #555;
+    width: 200px;
+}
+
+.interactive-zone {
+    border: 2px dashed #2c3e50;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e8e8e8;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* --- Стили для страницы Персонажей --- */
+
+.character-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.char-img {
+    float: left; /* Картинка слева */
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 3px solid #2c3e50;
+}
+
+/* Для четных персонажей картинку можно пустить справа (разнообразие) */
+.char-img-right {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 3px solid #2c3e50;
+}
+
+/* Очистка потока после каждого персонажа */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
